@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=IOConsole
+comment1.params=val\ args
+comment1.target=void\ print(java.lang.String,\ java.lang.Object[])
+comment1.text=\n\ @param\ val\ \ \:\ text\ to\ display\ on\ console\n\ @param\ args\ \:\ optional\ arguments\ to\ send\ for\ string\ formatting\n
+comment2.params=val\ args
+comment2.target=void\ println(java.lang.String,\ java.lang.Object[])
+comment2.text=\n\ @param\ val\ \ \:\ text\ to\ display\ on\ console\n\ @param\ args\ \:\ optional\ arguments\ to\ send\ for\ string\ formatting\n
+comment3.params=prompt\ args
+comment3.target=java.lang.String\ getStringInput(java.lang.String,\ java.lang.Object[])
+comment3.text=\n\ @param\ prompt\ \:\ text\ to\ display\ to\ user\n\ @param\ args\ \ \ \:\ optional\ arguments\ to\ send\ for\ string\ formatting\n\ @return\ user's\ input\ as\ String\n
+comment4.params=prompt\ args
+comment4.target=java.lang.Integer\ getIntegerInput(java.lang.String,\ java.lang.Object[])
+comment4.text=\n\ @param\ prompt\ \:\ text\ to\ display\ to\ user\n\ @param\ args\ \ \ \:\ optional\ arguments\ to\ send\ for\ string\ formatting\n\ @return\ user's\ input\ as\ integer\n
+comment5.params=prompt\ args
+comment5.target=java.lang.Double\ getDoubleInput(java.lang.String,\ java.lang.Object[])
+comment5.text=\n\ @param\ prompt\ \:\ text\ to\ display\ to\ user\n\ @param\ args\ \ \ \:\ optional\ arguments\ to\ send\ for\ string\ formatting\n\ @return\ user's\ input\ as\ double\n
+comment6.params=prompt\ args
+comment6.target=java.lang.Float\ getFloatInput(java.lang.String,\ java.lang.Object[])
+comment6.text=\n\ @param\ prompt\ \:\ text\ to\ display\ to\ user\n\ @param\ args\ \ \ \:\ optional\ arguments\ to\ send\ for\ string\ formatting\n\ @return\ user's\ input\ as\ float\n
+comment7.params=prompt\ args
+comment7.target=java.lang.Long\ getLongInput(java.lang.String,\ java.lang.Object[])
+comment7.text=\n\ @param\ prompt\ \:\ text\ to\ display\ to\ user\n\ @param\ args\ \ \ \:\ optional\ arguments\ to\ send\ for\ string\ formatting\n\ @return\ user's\ input\ as\ long\n
+numComments=8
