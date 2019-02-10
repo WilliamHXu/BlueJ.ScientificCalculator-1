@@ -59,7 +59,7 @@ public class MainApplicationTest
     
     @Test
     public void division_1Test()
-    { double expected = 31.0;
+    { double expected = 4.0;
         double a = 28.0;
         double b = 7.0;
        
@@ -71,13 +71,12 @@ public class MainApplicationTest
     
     @Test
     public void division_2Test(){
-        String s = "Error";
-        double expected = Double.parseDouble(s);
+        
+        double expected = Double.POSITIVE_INFINITY;
         double a = 28.0;
         double b = 0.0;
         double actual = mainApplication.division(a,b); 
         Assert.assertEquals("Values should be equal", expected, actual, 0.0);
-        Assert.assertEquals("Value should not be equal", expected, actual);
         
   } 
       

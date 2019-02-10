@@ -1,8 +1,14 @@
 
+/**
+ * Write a description of class CoreFeatures here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
 import java.util.Scanner;
 import java.util.Random;
-public class MainApplication {
-    
+public class CoreFeatures extends MainApplication
+{
     private static Scanner scanner = new Scanner(System.in);
     private static String operator = "";
     static int numberOfInputs = 0;
@@ -123,19 +129,7 @@ public static void main(String[] args) {
    {
         return input1*=-1;
     }
-    /**
-     * Constructor for objects of class IOConsole
-     */
+     
     
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
     
 }
-
-    
-    
