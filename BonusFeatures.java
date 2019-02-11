@@ -1,3 +1,4 @@
+
 /**
  * Bonus features for the calculator project
  *
@@ -32,7 +33,6 @@ public class BonusFeatures
         }
         return factorial;
     }
-    
     public static double permutation(double n, double r){
         double permutation;
 
@@ -46,4 +46,3 @@ public class BonusFeatures
         return combinations;
     }
 
-}
