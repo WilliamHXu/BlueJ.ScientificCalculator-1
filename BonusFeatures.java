@@ -1,5 +1,4 @@
 
-import java.lang.Math;
 /**
  * Bonus features for the calculator project
  *
@@ -29,15 +28,11 @@ public class BonusFeatures
 
     public static double factorial(double num){
         double factorial=1;
-        if(num == 0){
-            return 1;
-        }
         for(double i=1; i<=num; i++){
             factorial = factorial * i;
         }
         return factorial;
     }
-
     public static double permutation(double n, double r){
         double permutation;
 
@@ -50,6 +45,4 @@ public class BonusFeatures
         combinations = BonusFeatures.factorial(n)/(BonusFeatures.factorial(n-r)*BonusFeatures.factorial(r));
         return combinations;
     }
-
-}
 
