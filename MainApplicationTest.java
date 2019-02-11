@@ -128,7 +128,55 @@ public class MainApplicationTest
         
     }
     
+    // Scientific Calculator
     
+     @Test
+    public void sinTest()
+    { double expected = 0.5;
+        double a = 30;
+      double actual = scientificCalculator.sin(a);
+        Assert.assertEquals("Values should be equal", expected, actual, 0.01);
+    }
+    
+     @Test
+    public void cosTest()
+    { double expected = 0.5;
+        double a = 60;
+      double actual = scientificCalculator.cos(a);
+        Assert.assertEquals("Values should be equal", expected, actual, 0.01);
+    }
+    
+     @Test
+    public void tanTest()
+    { double expected = 1;
+        double a = 45;
+      double actual = scientificCalculator.tan(a);
+        Assert.assertEquals("Values should be equal", expected, actual, 0.01);
+    }
+    
+     @Test
+    public void arcsinTest()
+    { double expected = 90;
+        double a = 1;
+      double actual = scientificCalculator.arcsin(a);
+        Assert.assertEquals("Values should be equal", expected, actual, 0.01);
+    }
+    
+     @Test
+    public void arccosTest()
+    { double expected = 90;
+        double a = 0;
+      double actual = scientificCalculator.arccos(a);
+        Assert.assertEquals("Values should be equal", expected, actual, 0.01);
+    }
+    
+     @Test
+    public void arctanTest()
+    { double expected = 45;
+        double a = 1;
+      double actual = scientificCalculator.tan(a);
+        Assert.assertEquals("Values should be equal", expected, actual, 0.01);
+    }
 
     @After
     public void tearDown()
