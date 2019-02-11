@@ -172,8 +172,8 @@ public class MainApplicationTest
     
      @Test
     public void arctanTest()
-    { double expected = 45;
-        double a = 1;
+    { double expected = 0;
+        double a = 0;
       double actual = scientificCalculator.tan(a);
         Assert.assertEquals("Values should be equal", expected, actual, 0.01);
     }
