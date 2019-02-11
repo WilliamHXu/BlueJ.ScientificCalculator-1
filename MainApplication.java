@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 
+
 public class MainApplication {
     //Instance Variables
     static Scanner scanner = new Scanner(System.in);
@@ -61,6 +62,24 @@ public class MainApplication {
                 // Checks for single input operators and performs them
                 
                 
+                // Core Features
+                
+                else if (lastInput.equals("sq")) {
+                    displayValue = CoreFeatures.square(displayValue);
+                }
+                
+                else if (lastInput.equals("sqrt")) {
+                    displayValue = CoreFeatures.squareroot(displayValue);
+                }
+                
+                else if (lastInput.equals("1/x")) {
+                    displayValue = CoreFeatures.inverseOfNumber(displayValue);
+                }
+                
+                else if (lastInput.equals("+-")) {
+                    displayValue = CoreFeatures.positiveOrNegative(displayValue);
+                }
+                
                 // Trig Functions
                 else if (lastInput.equals("sin")) {
                     displayValue = scientificCalculator.sin(displayValue);
@@ -86,10 +105,57 @@ public class MainApplication {
                     displayValue = scientificCalculator.arctan(displayValue);
                 }
                 
+                // Bonus Features
                 
+                else if (lastInput.equals("nlog")) {
+                    displayValue = BonusFeatures.naturalLog(displayValue);
+                }
+                
+                else if (lastInput.equals("inlog")) {
+                    displayValue = BonusFeatures.inverseNaturalLog(displayValue);
+                }
+                
+                else if (lastInput.equals("log")) {
+                    displayValue = BonusFeatures.log(displayValue);
+                }
+                
+                else if (lastInput.equals("ilog")) {
+                    displayValue = BonusFeatures.inverseLog(displayValue);
+                }
+                
+                else if (lastInput.equals("!")) {
+                    displayValue = BonusFeatures.factorial(displayValue);
+                }
                 
                 // Checks for double input operators 
                 // or operators which require String input and performs them
+                
+                // Core Features
+                
+                else if (lastInput.equals("+")) {
+                    double input = IOConsole.getDoubleInput("");
+                    displayValue = CoreFeatures.sum(displayValue, input);
+                }
+                
+                else if (lastInput.equals("-")) {
+                    double input = IOConsole.getDoubleInput("");
+                    displayValue = CoreFeatures.difference(displayValue, input);
+                }
+                
+                else if (lastInput.equals("*")) {
+                    double input = IOConsole.getDoubleInput("");
+                    displayValue = CoreFeatures.product(displayValue, input);
+                }
+                
+                else if (lastInput.equals("/")) {
+                    double input = IOConsole.getDoubleInput("");
+                    displayValue = CoreFeatures.division(displayValue, input);
+                }
+                
+                else if (lastInput.equals("^")) {
+                    double input = IOConsole.getDoubleInput("");
+                    displayValue = CoreFeatures.exponential(displayValue, input);
+                }
                 
                 // Display Mode Switching
                 
@@ -105,6 +171,17 @@ public class MainApplication {
                     scientificCalculator.switchUnitsMode(input);
                 }
                 
+                // Bonus Features
+                
+                else if (lastInput.equals("perm")) {
+                    double input = IOConsole.getDoubleInput("");
+                    displayValue = BonusFeatures.permutation(displayValue, input);
+                }
+                
+                else if (lastInput.equals("comb")) {
+                    double input = IOConsole.getDoubleInput("");
+                    displayValue = BonusFeatures.combinations(displayValue, input);
+                }
                 
                 // Method Not Found
                 
@@ -128,5 +205,7 @@ public class MainApplication {
         }  
         return true;  
     }
-    
 }
+
+    
+    
